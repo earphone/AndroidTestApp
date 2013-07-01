@@ -1,5 +1,8 @@
 package com.example.firstapp;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -17,8 +20,8 @@ public class DisplayMessageActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_display_message);
-
+		setContentView(R.layout.activity_display_message);	        		
+		
 		// Make sure we're running on Honeycomb or higher to use ActionBar APIs
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			// Show the Up button in the action bar.
