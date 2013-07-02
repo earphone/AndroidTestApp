@@ -4,7 +4,12 @@
 	This is the first app tutorial from the android developer website.
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
-	
+
+	Second Test:	July 1, 2013
+			Worked on retrieving Parse objects with queries
+			Experimented with different types of getX commands 
+				for basic query
+
 	Fist Test:	databasing and working with Parse
 			"parse.com"
 
