@@ -1,7 +1,11 @@
 package com.example.firstapp;
 
+import com.parse.GetCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseAnalytics;
+import com.parse.ParseQuery;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,7 +25,7 @@ public class MainActivity extends Activity {
     	Parse.initialize(this, "OdAVwKCSwWGzcYYziwk0MxsZgP11D4xYBbD7cdSN", "aMu14e9jrNTV9C1qF62ZV8wRSz7KZe7qffwMG4qX");  
         
         // Parse: Used to track how many times app is opened
-        //ParseAnalytics.trackAppOpened(getIntent());
+        ParseAnalytics.trackAppOpened(getIntent());
         
         // Parse: Test to make sure that the SDK is working properly
         final ParseObject purpleTest = new ParseObject("purpleNurple");
@@ -40,6 +44,23 @@ public class MainActivity extends Activity {
         // pupleTest.saveInBackground();
         orangeTest.saveInBackground();
        
+        // Parse: Retrieve object from database
+        ParseQuery<ParseObject> foundClue = ParseQuery.getQuery("blueClue");
+        foundClue.getInBackground("N9Tf2C4ZbP", new GetCallback<ParseObject>() {
+        	public void done(ParseObject object, ParseException e) {
+        		if(e == null) {
+        			// Take the value of an item and create a new item with the same value
+        			String pawValue = object.getString("paw");
+        			object.put("updated", "yes");
+        			object.put("same?", pawValue);
+        			object.saveInBackground();
+        		}
+        		else {
+        			// something went wrong
+        		}
+        	}
+        });
+        
         setContentView(R.layout.activity_main);
         
     }
