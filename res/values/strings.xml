@@ -13,5 +13,6 @@
     <string name="password_forgot">Forgot your password??</string>
     <string name="keep_login">Keep myself logged in :D</string>
     <string name="signup_button">Not a member?!?! SIGN UP</string>
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>

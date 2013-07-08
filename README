@@ -5,6 +5,12 @@
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
 	
+	ToDo:		Set up onclicks for the buttons in the login activity
+
+	July 7, 2013:	Added a login activity
+			Modified the manifest so that the login activity is
+				viewed when the app is launched	
+
 	July 6, 2013:	Created a template for testing Parse User Login
 
 	Second Test:	July 1, 2013

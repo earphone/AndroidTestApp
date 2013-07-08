@@ -41,7 +41,8 @@ public final class R {
     }
     public static final class menu {
         public static final int display_message=0x7f070000;
-        public static final int main=0x7f070001;
+        public static final int login=0x7f070001;
+        public static final int main=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -55,6 +56,7 @@ public final class R {
         public static final int password_hint=0x7f050007;
         public static final int signup_button=0x7f05000b;
         public static final int title_activity_display_message=0x7f050005;
+        public static final int title_activity_login=0x7f05000c;
         public static final int username_hint=0x7f050006;
     }
     public static final class style {
@@ -84,5 +86,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int LoginFormContainer=0x7f060002;
     }
 }

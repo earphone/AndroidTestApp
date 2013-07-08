@@ -1,7 +1,5 @@
 package com.example.firstapp;
 
-import com.parse.Parse;
-import com.parse.ParseObject;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

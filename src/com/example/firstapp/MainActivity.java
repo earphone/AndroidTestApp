@@ -1,10 +1,8 @@
 package com.example.firstapp;
 
 import com.parse.GetCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseAnalytics;
 import com.parse.ParseQuery;
 
 import android.app.Activity;
@@ -20,12 +18,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
-
-       // Parse: Initialize
-    	Parse.initialize(this, "OdAVwKCSwWGzcYYziwk0MxsZgP11D4xYBbD7cdSN", "aMu14e9jrNTV9C1qF62ZV8wRSz7KZe7qffwMG4qX");  
-        
-        // Parse: Used to track how many times app is opened
-        ParseAnalytics.trackAppOpened(getIntent());
         
         // Parse: Test to make sure that the SDK is working properly
         final ParseObject purpleTest = new ParseObject("purpleNurple");
