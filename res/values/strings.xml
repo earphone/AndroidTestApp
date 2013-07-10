@@ -14,5 +14,9 @@
     <string name="keep_login">Keep myself logged in :D</string>
     <string name="signup_button">Not a member?!?! SIGN UP</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="name_hint">Firstname Lastname</string>
+    <string name="email_hint">E-MAIL</string>
+    <string name="signup_done_button">FINISH SIGNUP</string>
 
 </resources>

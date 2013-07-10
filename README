@@ -5,7 +5,19 @@
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
 	
-	ToDo:		Set up onclicks for the buttons in the login activity
+	ToDo:		Finish login activity
+
+	July 9, 2013:	Added a signup activity
+			  Creates a new Parse user with the following
+				fields:
+					username
+					name
+					email
+					password
+			Linked the login activity to signup activity by button
+			Linked the signup activity to main by buton
+			Experimented with Toasts to show if signup was 
+				successful or not
 
 	July 7, 2013:	Added a login activity
 			Modified the manifest so that the login activity is

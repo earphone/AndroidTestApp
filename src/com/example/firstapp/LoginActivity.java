@@ -1,11 +1,13 @@
 package com.example.firstapp;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
-
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
 
 public class LoginActivity extends Activity {
 
@@ -27,6 +29,12 @@ public class LoginActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
+	}
+	
+	public void loginSignup(View view) {
+		// Go from login page to sign up page
+		Intent intent = new Intent(this, SignUpActivity.class);
+		startActivity(intent);
 	}
 
 }
