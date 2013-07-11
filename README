@@ -12,6 +12,10 @@
 			Able to read a linked users words
 
 	July 10, 2013:	Finished login to handle correct and incorrect logins	
+			Deleted keep logged in checkbox on loging screen for
+				convenience and till further research is done
+			Overrode the onBackPressed function for loginActivity
+				to prevent going back after user logged out
 
 	July 9, 2013:	Added a signup activity
 			  Creates a new Parse user with the following

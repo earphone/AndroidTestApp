@@ -27,6 +27,16 @@ public class LoginActivity extends Activity {
 	        // Parse: Used to track how many times app is opened
 	        ParseAnalytics.trackAppOpened(getIntent());
 	        
+	        // If user is currently signed in then skip this loginActivity	
+	        ParseUser currentUser = ParseUser.getCurrentUser();
+	        if(currentUser != null) {
+	        	// User logged in so send to main
+	        	Intent intent = new Intent(this, MainActivity.class);
+	        	startActivity(intent);
+	        } else {
+	        	// User not logged in so show login
+	        }
+	        
 		setContentView(R.layout.login);
 	}
 
@@ -35,6 +45,12 @@ public class LoginActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
+	}
+	
+	// Prevent the user from using the back button
+	@Override
+	public void onBackPressed() {
+		// Do nothing to prevent going back after logout
 	}
 	
 	public void loginLogin(View view) {
