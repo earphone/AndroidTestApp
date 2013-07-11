@@ -69,6 +69,6 @@ public class SignUpActivity extends Activity {
 		
 		// Open up the next activity
 		startActivity(intent);
-	}
+	} // end of finishSignup
 
 }

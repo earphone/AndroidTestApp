@@ -5,7 +5,13 @@
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
 	
-	ToDo:		Finish login activity
+	ToDo:		Keep user logged in
+			Forgotten password
+			Find a way to link users together
+			Have a user submit a word
+			Able to read a linked users words
+
+	July 10, 2013:	Finished login to handle correct and incorrect logins	
 
 	July 9, 2013:	Added a signup activity
 			  Creates a new Parse user with the following
