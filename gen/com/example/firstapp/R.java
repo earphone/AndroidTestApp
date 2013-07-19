@@ -24,6 +24,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int Logout=0x7f08000d;
         public static final int RelativeLayout1=0x7f080006;
         public static final int action_settings=0x7f08000c;
         public static final int button_login=0x7f08000b;
@@ -59,6 +60,7 @@ public final class R {
         public static final int hello_world=0x7f050002;
         public static final int keep_login=0x7f05000a;
         public static final int login_button=0x7f050008;
+        public static final int logout_string=0x7f050011;
         public static final int name_hint=0x7f05000e;
         public static final int password_forgot=0x7f050009;
         public static final int password_hint=0x7f050007;

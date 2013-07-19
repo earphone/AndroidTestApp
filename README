@@ -11,6 +11,14 @@
 			Have a user submit a word
 			Able to read a linked users words
 
+	July 18, 2013:	Implemented Logout in the actionbar for Main and
+				Display activities
+			Logout clears ParseUser from phone cache and sends
+				the user back to the Login activity
+	
+	July 17, 2013:	Made the icon clickable in MainActivity and
+				DisplayMessageActivity and sends to Main
+
 	July 10, 2013:	Finished login to handle correct and incorrect logins	
 			Deleted keep logged in checkbox on loging screen for
 				convenience and till further research is done

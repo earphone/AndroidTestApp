@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SignUpActivity" >
 
+  
     <EditText
         android:id="@+id/signupUsername"
         android:layout_width="wrap_content"

@@ -1,16 +1,21 @@
 package com.example.firstapp;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
-import android.widget.EditText;
+import com.parse.ParseUser;
 
 public class MainActivity extends Activity {
 
@@ -58,11 +63,28 @@ public class MainActivity extends Activity {
     }
 
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
         return true;
+    }
+    
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+    	case android.R.id.home:
+    		// If app icon clicked, go home
+    		Intent intent = new Intent(this, MainActivity.class);
+    		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    		startActivity(intent);
+    		return true;
+    	case R.id.Logout:
+    		// If logout clicked, then logout :p
+    		logout();
+    		return true;
+    	default:
+    		return super.onOptionsItemSelected(item);
+        }
     }
     
     /** Called when the user clicks the Send button **/
@@ -73,6 +95,22 @@ public class MainActivity extends Activity {
     	String message = editText.getText().toString();
     	intent.putExtra(EXTRA_MESSAGE, message);
     	startActivity(intent);
+    }
+    
+    public void logout() {
+    	// Logout user if this is selected
+    	Intent intent = new Intent(this, LoginActivity.class);
+    	ParseUser.logOut();
+    	ParseUser currentUser = ParseUser.getCurrentUser(); // this is now null
+    	if(currentUser == null) {
+    		startActivity(intent);
+    	}
+    	else {
+    		Context context = getApplicationContext();
+			CharSequence text = "YOU F'd UP AND WE CAN'T LOG YOU OUT BRO ";
+			int duration = Toast.LENGTH_SHORT;
+			Toast.makeText(context, text, duration).show();
+    	}
     }
     
 }
