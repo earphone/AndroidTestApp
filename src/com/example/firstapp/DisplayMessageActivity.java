@@ -1,8 +1,6 @@
 package com.example.firstapp;
 
 
-import com.parse.ParseUser;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +12,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 public class DisplayMessageActivity extends Activity {
 
@@ -33,6 +34,18 @@ public class DisplayMessageActivity extends Activity {
 		// Get the message from the intent
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+
+		// Attach Parse user to the message
+		ParseUser user = ParseUser.getCurrentUser();
+		if(user == null) {
+			Toast.makeText(getApplicationContext(), "noone logged in ", Toast.LENGTH_SHORT).show();
+		}
+		ParseObject userMessage = new ParseObject("UserMessages");
+		userMessage.put("Message", message);
+		userMessage.put("USER", user);
+		userMessage.put("ADDED", "YES");
+		userMessage.saveInBackground();
+		user.saveInBackground();
 		
 		// Create the text view
 		TextView textView = new TextView(this);
@@ -41,6 +54,8 @@ public class DisplayMessageActivity extends Activity {
 		
 		// Set the text view as the activity layout
 		setContentView(textView);
+		
+		
 	}
 
 	

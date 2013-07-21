@@ -11,6 +11,12 @@
 			Have a user submit a word
 			Able to read a linked users words
 
+	July 20, 2013:	Implemented exiting the app with the back button
+				from the login screen
+			Created a new class in Parse called "UserMessages"
+				that contains all of the messages added
+				by users and links it to them
+
 	July 18, 2013:	Implemented Logout in the actionbar for Main and
 				Display activities
 			Logout clears ParseUser from phone cache and sends

@@ -48,10 +48,14 @@ public class LoginActivity extends Activity {
 		return true;
 	}
 	
-	// Prevent the user from using the back button
+	// Have the user exit the app when using back button
 	@Override
 	public void onBackPressed() {
-		// Do nothing to prevent going back after logout
+		// Exit app after logout
+		Intent intent = new Intent(Intent.ACTION_MAIN);
+		intent.addCategory(Intent.CATEGORY_HOME);
+		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		startActivity(intent);
 	}
 	
 	public void loginLogin(View view) {

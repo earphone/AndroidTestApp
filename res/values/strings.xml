@@ -19,5 +19,6 @@
     <string name="email_hint">E-MAIL</string>
     <string name="signup_done_button">FINISH SIGNUP</string>
     <string name="logout_string">Logout</string>
+    <string name="userMessages">userMessages</string>
 
 </resources>

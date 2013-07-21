@@ -69,6 +69,7 @@ public final class R {
         public static final int title_activity_display_message=0x7f050005;
         public static final int title_activity_login=0x7f05000c;
         public static final int title_activity_sign_up=0x7f05000d;
+        public static final int userMessages=0x7f050012;
         public static final int username_hint=0x7f050006;
     }
     public static final class style {
