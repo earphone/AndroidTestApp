@@ -5,11 +5,19 @@
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
 	
-	ToDo:		Keep user logged in
+	ToDo:		Figure out why ParseQueryAdapter is not importing
+			Keep user logged in
 			Forgotten password
 			Find a way to link users together
 			Have a user submit a word
 			Able to read a linked users words
+			Get Parse queries and turn them into lists to
+				display in ListActivity
+
+	July 31, 2013:  Minor edits to ListActivity using ParseQueryAdapter
+				but it is not importing.  Working on
+				researching the cause.  May just be buggy
+				Eclipse.	
 
 	July 20, 2013:	Implemented exiting the app with the back button
 				from the login screen

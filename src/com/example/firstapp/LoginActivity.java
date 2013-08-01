@@ -39,6 +39,7 @@ public class LoginActivity extends Activity {
 	        }
 	        
 		setContentView(R.layout.login);
+		setTitle("Login HERE");
 	}
 
 	@Override

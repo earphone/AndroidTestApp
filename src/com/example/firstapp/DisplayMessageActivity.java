@@ -77,27 +77,12 @@ public class DisplayMessageActivity extends Activity {
     		return true;
     	case R.id.Logout:
     		// If logout clicked, then logout :p
-    		logout();
+    		MainActivity mainAct = new MainActivity();
+    		mainAct.logout();
     		return true;
     	default:
     		return super.onOptionsItemSelected(item);
         }
     }
     
-    public void logout() {
-    	// Logout user if this is selected
-    	Intent intent = new Intent(this, LoginActivity.class);
-    	ParseUser.logOut();
-    	ParseUser currentUser = ParseUser.getCurrentUser(); // this is now null
-    	if(currentUser == null) {
-    		startActivity(intent);
-    	}
-    	else {
-    		Context context = getApplicationContext();
-			CharSequence text = "YOU F'd UP AND WE CAN'T LOG YOU OUT BRO ";
-			int duration = Toast.LENGTH_SHORT;
-			Toast.makeText(context, text, duration).show();
-    	}
-    }
-        
 }

@@ -42,6 +42,10 @@
             android:name="com.example.firstapp.SignUpActivity"
             android:label="@string/title_activity_sign_up" >
         </activity>
+        <activity
+            android:name="com.example.firstapp.ListActivity"
+            android:label="@string/title_activity_list" >
+        </activity>
     </application>
 
 </manifest>

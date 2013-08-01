@@ -20,5 +20,6 @@
     <string name="signup_done_button">FINISH SIGNUP</string>
     <string name="logout_string">Logout</string>
     <string name="userMessages">userMessages</string>
+    <string name="title_activity_list">ListActivity</string>
 
 </resources>
