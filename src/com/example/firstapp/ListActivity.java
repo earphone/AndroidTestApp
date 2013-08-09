@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.widget.ListView;
 
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
+import com.parse.ParseQueryAdapter;
 
 public class ListActivity extends Activity {
 

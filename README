@@ -5,14 +5,17 @@
 	I am mainly using it to experiment with features that I may or may
 	not want inside of any future apps that I create.
 	
-	ToDo:		Figure out why ParseQueryAdapter is not importing
-			Keep user logged in
+	ToDo:		Keep user logged in
 			Forgotten password
 			Find a way to link users together
 			Have a user submit a word
 			Able to read a linked users words
 			Get Parse queries and turn them into lists to
 				display in ListActivity
+
+	August 8, 2013:	Updated Parse library from 1.3.0 to 1.3.2
+				This fixed the issue of ParseQueryAdapter
+				not being imported.
 
 	July 31, 2013:  Minor edits to ListActivity using ParseQueryAdapter
 				but it is not importing.  Working on
