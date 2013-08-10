@@ -8,10 +8,15 @@
 	ToDo:		Keep user logged in
 			Forgotten password
 			Find a way to link users together
-			Have a user submit a word
 			Able to read a linked users words
-			Get Parse queries and turn them into lists to
-				display in ListActivity
+
+	August 9, 2013:	Added ChooseActivity that allows user to either
+				add a new word or view all words
+			ListActivity properly lists all user submitted
+				words in the database
+			Properly added "Chooser" option in ListActivity,
+				MainActivity, DisplayMessageActivity that
+				sends the user up to the ChooseActivity
 
 	August 8, 2013:	Updated Parse library from 1.3.0 to 1.3.2
 				This fixed the issue of ParseQueryAdapter

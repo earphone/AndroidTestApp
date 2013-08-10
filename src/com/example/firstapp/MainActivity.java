@@ -72,11 +72,9 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-    	case android.R.id.home:
-    		// If app icon clicked, go home
-    		Intent intent = new Intent(this, MainActivity.class);
-    		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    		startActivity(intent);
+    	case R.id.up_to_chooser:
+    		// If Chooser clicked, then go to ChooseActivity
+    		chooser();
     		return true;
     	case R.id.Logout:
     		// If logout clicked, then logout :p
@@ -94,6 +92,12 @@ public class MainActivity extends Activity {
     	EditText editText = (EditText) findViewById(R.id.edit_message);
     	String message = editText.getText().toString();
     	intent.putExtra(EXTRA_MESSAGE, message);
+    	startActivity(intent);
+    }
+    
+    public void chooser() {
+    	// Return user to ChooseActivity if selected
+    	Intent intent = new Intent(this, ChooseActivity.class);
     	startActivity(intent);
     }
     

@@ -32,7 +32,7 @@ public class SignUpActivity extends Activity {
 	public void finishSignup(View view) {
 		// Take all fields and create a new user in Parse with this data
 		// After that go to MainActivity
-		Intent intent = new Intent(this, MainActivity.class);
+		Intent intent = new Intent(this, ChooseActivity.class);
 		EditText usernameText = (EditText) findViewById(R.id.signupUsername);
 		EditText nameText = (EditText) findViewById(R.id.signupName);
 		EditText emailText = (EditText) findViewById(R.id.signupEmail);

@@ -22,5 +22,8 @@
     <string name="userMessages">userMessages</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="display_all_button">View ALL of dEm!¡!¡!</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="new_word_button">Add Something to da List</string>
+    <string name="chooser_string">Chooser</string>
 
 </resources>

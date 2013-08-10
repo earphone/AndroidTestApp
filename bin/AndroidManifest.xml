@@ -46,6 +46,10 @@
             android:name="com.example.firstapp.ListActivity"
             android:label="@string/title_activity_list" >
         </activity>
+        <activity
+            android:name="com.example.firstapp.ChooseActivity"
+            android:label="@string/title_activity_choose" >
+        </activity>
     </application>
 
 </manifest>

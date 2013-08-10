@@ -76,7 +76,7 @@ public class LoginActivity extends Activity {
 					CharSequence text = "WELCOME BACK ";
 					int duration = Toast.LENGTH_SHORT;
 					Toast.makeText(context, text + username, duration).show();
-					Intent intent = new Intent(context, MainActivity.class);
+					Intent intent = new Intent(context, ChooseActivity.class);
 					startActivity(intent);
 				} else {
 					// Signin failed
