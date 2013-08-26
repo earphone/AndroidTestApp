@@ -22,10 +22,20 @@
         android:id="@+id/viewAllWords"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/addNewWord"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="134dp"
+        android:layout_marginTop="52dp"
         android:onClick="viewAll"
         android:text="@string/display_all_button" />
+
+    <Button
+        android:id="@+id/enterADate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewAllWords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:onClick="addDate"
+        android:text="@string/add_date" />
 
 </RelativeLayout>

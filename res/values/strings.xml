@@ -25,5 +25,7 @@
     <string name="title_activity_choose">ChooseActivity</string>
     <string name="new_word_button">Add Something to da List</string>
     <string name="chooser_string">Chooser</string>
+    <string name="add_date">Add a Date ;)</string>
+    <string name="title_activity_add_date">AddDate</string>
 
 </resources>

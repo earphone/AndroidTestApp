@@ -50,6 +50,10 @@
             android:name="com.example.firstapp.ChooseActivity"
             android:label="@string/title_activity_choose" >
         </activity>
+        <activity
+            android:name="com.example.firstapp.AddDate"
+            android:label="@string/title_activity_add_date" >
+        </activity>
     </application>
 
 </manifest>
