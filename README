@@ -9,7 +9,11 @@
 			Forgotten password
 			Find a way to link users together
 			Able to read a linked users words
-
+	
+	August 25, 2013:Added addDate activity but nothing inside yet
+			Added a button in chooser that leads to addDate
+				and a function for onClick
+	
 	August 9, 2013:	Added ChooseActivity that allows user to either
 				add a new word or view all words
 			ListActivity properly lists all user submitted
