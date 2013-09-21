@@ -24,26 +24,28 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Logout=0x7f080013;
-        public static final int RelativeLayout1=0x7f08000a;
-        public static final int action_settings=0x7f080010;
-        public static final int addNewWord=0x7f080000;
-        public static final int button_login=0x7f08000f;
-        public static final int chooserLogout=0x7f080011;
-        public static final int edit_message=0x7f080004;
-        public static final int enterADate=0x7f080002;
-        public static final int forgot_password=0x7f08000e;
-        public static final int messageList=0x7f080003;
-        public static final int passwordLogin=0x7f08000c;
-        public static final int signUp=0x7f08000d;
-        public static final int signupEmail=0x7f080008;
-        public static final int signupFinishButton=0x7f080006;
-        public static final int signupName=0x7f080007;
-        public static final int signupPassword=0x7f080009;
-        public static final int signupUsername=0x7f080005;
-        public static final int up_to_chooser=0x7f080012;
-        public static final int usernameLogin=0x7f08000b;
-        public static final int viewAllWords=0x7f080001;
+        public static final int Logout=0x7f080015;
+        public static final int RelativeLayout1=0x7f08000c;
+        public static final int action_settings=0x7f080012;
+        public static final int addNewWord=0x7f080002;
+        public static final int button_login=0x7f080011;
+        public static final int chooserLogout=0x7f080013;
+        public static final int edit_message=0x7f080006;
+        public static final int enterADate=0x7f080004;
+        public static final int forgot_password=0x7f080010;
+        public static final int messageList=0x7f080005;
+        public static final int passwordLogin=0x7f08000e;
+        public static final int showDatePicker=0x7f080000;
+        public static final int showTimePicker=0x7f080001;
+        public static final int signUp=0x7f08000f;
+        public static final int signupEmail=0x7f08000a;
+        public static final int signupFinishButton=0x7f080008;
+        public static final int signupName=0x7f080009;
+        public static final int signupPassword=0x7f08000b;
+        public static final int signupUsername=0x7f080007;
+        public static final int up_to_chooser=0x7f080014;
+        public static final int usernameLogin=0x7f08000d;
+        public static final int viewAllWords=0x7f080003;
     }
     public static final class layout {
         public static final int activity_add_date=0x7f030000;
@@ -80,8 +82,11 @@ public final class R {
         public static final int new_word_button=0x7f050016;
         public static final int password_forgot=0x7f050009;
         public static final int password_hint=0x7f050007;
+        public static final int set_date=0x7f05001b;
+        public static final int set_time=0x7f05001c;
         public static final int signup_button=0x7f05000b;
         public static final int signup_done_button=0x7f050010;
+        public static final int submit_button=0x7f05001a;
         public static final int title_activity_add_date=0x7f050019;
         public static final int title_activity_choose=0x7f050015;
         public static final int title_activity_display_message=0x7f050005;

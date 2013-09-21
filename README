@@ -10,7 +10,14 @@
 			Find a way to link users together
 			Able to read a linked users words
 	
-	August 25, 2013:Added addDate activity but nothing inside yet
+	Sept 21, 2013:	Added DatePickerFragment and TimePickerFragment classes
+				to show fragments of time and date picking
+				when certain buttons are clicked
+				Currently, they do not do anything when
+				submitted.
+			Added text into AddDate that are clickable that
+				instantiate the time and date fragments
+	August 25, 2013:Added AddDate activity but nothing inside yet
 			Added a button in chooser that leads to addDate
 				and a function for onClick
 	

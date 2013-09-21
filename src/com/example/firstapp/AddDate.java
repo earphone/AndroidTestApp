@@ -1,8 +1,10 @@
-package com.example.firstapp;
+	package com.example.firstapp;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.app.DialogFragment;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 
 public class AddDate extends Activity {
 
@@ -19,4 +21,13 @@ public class AddDate extends Activity {
 		return true;
 	}
 
+	public void showTimePicker(View v) {
+		DialogFragment newFragment = new TimePickerFragment();
+		newFragment.show(getFragmentManager(), "timePicker");
+	}
+	
+	public void showDatePicker(View v) {
+		DialogFragment newFragment = new DatePickerFragment();
+		newFragment.show(getFragmentManager(), "datePicker");
+	}
 }

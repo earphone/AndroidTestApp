@@ -27,5 +27,8 @@
     <string name="chooser_string">Chooser</string>
     <string name="add_date">Add a Date ;)</string>
     <string name="title_activity_add_date">AddDate</string>
+    <string name="submit_button">Submit to ME</string>
+    <string name="set_date">Set da DATE</string>
+    <string name="set_time">Set derr TIME</string>
 
 </resources>

@@ -8,4 +8,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AddDate" >
 
+    <TextView
+        android:id="@+id/showDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="@string/set_date"
+        android:clickable="true"
+        android:onClick="showDatePicker" />
+
+    <TextView
+        android:id="@+id/showTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/set_time"
+        android:clickable="true"
+        android:onClick="showTimePicker" />
+
 </RelativeLayout>
